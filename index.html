@@ -104,6 +104,52 @@
       font-size: 14px;
       text-align: justify;
     }
+
+    /* =========================================
+       MOBILE RESPONSIVENESS (iPhones, etc.)
+       ========================================= */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px; /* Less outer padding on small screens */
+      }
+      
+      .methodology-container {
+        padding: 70px 15px 25px 15px; /* Reduce container padding */
+        border-radius: 20px; /* Slightly softer corners for mobile */
+      }
+
+      .methodology-title {
+        font-size: 18px; /* Smaller title */
+        padding: 8px 20px;
+        left: 15px;
+      }
+
+      .step-wrapper {
+        flex-direction: column; /* Stack image on top of text */
+        margin-bottom: 25px;
+      }
+
+      .placeholder-block {
+        width: 100%; /* Image takes full width of container */
+        height: 120px; /* Fixed height for image area */
+        margin-right: 0;
+        margin-bottom: 15px; /* Add space below image */
+        flex: none;
+      }
+
+      .content-box {
+        padding: 20px 15px 20px 55px; /* Adjust padding for text box */
+        border-radius: 20px;
+      }
+
+      .step-number-inset {
+        width: 35px; /* Slightly smaller number circle */
+        height: 35px;
+        font-size: 16px;
+        top: 15px;
+        left: 10px;
+      }
+    }
   </style>
 </head>
 <body>
