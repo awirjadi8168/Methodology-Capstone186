@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Modification Project | Methodology</title>
+    <style>
+        /* General Reset and Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e2e8f0; /* Light gray-blue background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2c3e50; /* Dark blue/gray */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-brand {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a.active, .nav-links a:hover {
+            opacity: 1;
+            font-weight: bold;
+        }
+
+        /* Main Content Container */
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h1.page-title {
+            color: #1a365d;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid #3182ce;
+            display: inline-block;
+            padding-bottom: 0.2rem;
+        }
+
+        /* Methodology Steps Styling */
+        .step-container {
+            display: flex;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #cbd5e0;
+            overflow: hidden;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .step-number {
+            background-color: #3182ce; /* Bright blue */
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            height: 50px;
+            width: 50px;
+            min-width: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .step-content h2 {
+            color: #2d3748;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px dashed #e2e8f0;
+            padding-bottom: 0.3rem;
+        }
+
+        .step-content p {
+            color: #4a5568;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            .step-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .step-number {
+                margin-bottom: 1rem;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-brand">Diamond Modification Project</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Overview</a>
+            <a href="#" class="active">Methodology</a>
+            <a href="#">Characterization</a>
+            <a href="#">Results</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="page-title">Methodology</h1>
+
+        <div class="step-container">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h2>Femtosecond Lasering</h2>
+                <p>The laser was polarized to control the growth direction of LIPSS and operated under the wavelength of 1040 nm, and a pulse of 332 fs. The optimal laser power was set to 0.05 W. Process is in Oxygen environment to reduce graphite formation.</p>
+            </div>
+        </div>
+
+        <div class="step-container">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h2>Acid Bath Chemical Cleaning</h2>
+                <p>The cleaning solution was prepared by sequentially adding 7mL of 68% nitric acid (HNO3), 98% sulfuric acid (H2SO4), and 70% perchloric acid (HClO4). The flask is heated up to 80°C, 190°C, and 210°C to remove the graphite from the diamond.</p>
+            </div>
+        </div>
+
+        <div class="step-container">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h2>Water Droplet Wettability Test</h2>
+                <p>10 µL water droplet is dropped on to the diamond. The contact angle between the droplet and the diamond surface is then analyzed through Image J. The smaller the contact angle, the better the surface hydrophilicity.</p>
+            </div>
+        </div>
+
+        <div class="step-container">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h2>Material Characterization (SEM, Raman, AFM, FIB)</h2>
+                <p>LowVac environment to reduce charging and drift during SEM imaging. Raman spectroscopy to accurately observe the pure diamond and graphite composition. AFM and FIB to map and measure the overall LIPSS height and formation.</p>
+            </div>
+        </div>
+
+        <div class="step-container">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <h2>Titanium Sputtering and Annealing</h2>
+                <p>Titanium is sputtered onto the diamond substrate with a target thickness of ~800 nm. Upon completion, the sputtered diamond is then annealed at 800°C in a vacuum environment to prevent oxidation during the formation of Titanium Carbide.</p>
+            </div>
+        </div>
+
+        <div class="step-container">
+            <div class="step-number">6</div>
+            <div class="step-content">
+                <h2>Nano Scratch Testing and Thermal Test</h2>
+                <p>Information and procedure of Nano Scratch testing and thermal test using time domain thermoreflectance will be placed here once completed.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Created for the Diamond Modification Project &copy; 2026. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
